@@ -1,6 +1,8 @@
 import media
 import fresh_tomatoes
 
+# List movies that to display on the website
+# Each movie has 4 attributes: name, brief, box art, trailer url
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life",
                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
@@ -31,7 +33,11 @@ king_kong = media.Movie("Kong: Skull Island",
                         "http://api.comingsoon.net//images//2017/poster_57517_1486991879.jpg",
                         "https://www.youtube.com/watch?v=ddOTWvzk7IY")
 
+# make sure you update the movie variable in the movies list!
+# the item in the movies list should match the movie variables you list above
 movies = [toy_story, avatar, titanic, interstellar, rogue_one, king_kong]
+
+# the code below calls the fresh_totamotes script to produce a new html
 fresh_tomatoes.open_movies_page(movies)
 print(media.Movie.VALID_RATINGS)
 print(media.Movie.__doc__)
