@@ -1,4 +1,5 @@
-import media, fresh_tomatoes
+import media
+import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life",
@@ -16,26 +17,26 @@ titanic = media.Movie("Titanic",
                       "https://www.youtube.com/watch?v=zCy5WQ9S4c0")
 
 interstellar = media.Movie("Interstellar",
-                      "a team of pioneers undertakes a mission to find a new earth for humans",
-                      "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
-                      "https://www.youtube.com/watch?v=8EdxTFS3fD0")
+                           "a team of pioneers undertakes a mission to find a new earth for humans",
+                           "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+                           "https://www.youtube.com/watch?v=8EdxTFS3fD0")
 
 rogue_one = media.Movie("Rogue One: A Star Wars Story",
-                      "a group of unlikely heroes band together to steal the blueprint of the Death Star",
-                      "http://cdn3-www.comingsoon.net/assets/uploads/gallery/star-wars-rogue-one/cwq_ccexuauhczm.jpg",
-                      "https://www.youtube.com/watch?v=frdj1zb9sMY")
+                        "a group of unlikely heroes band together to steal the blueprint of the Death Star",
+                        "http://cdn3-www.comingsoon.net/assets/uploads/gallery/star-wars-rogue-one/cwq_ccexuauhczm.jpg",
+                        "https://www.youtube.com/watch?v=frdj1zb9sMY")
 
 king_kong = media.Movie("Kong: Skull Island",
-                      "a team of explorers explored an uncharted island, the home of a mythic King Kong",
-                      "http://api.comingsoon.net//images//2017/poster_57517_1486991879.jpg",
-                      "https://www.youtube.com/watch?v=ddOTWvzk7IY")
+                        "a team of explorers explored an uncharted island, the home of a mythic King Kong",
+                        "http://api.comingsoon.net//images//2017/poster_57517_1486991879.jpg",
+                        "https://www.youtube.com/watch?v=ddOTWvzk7IY")
 
 movies = [toy_story, avatar, titanic, interstellar, rogue_one, king_kong]
 fresh_tomatoes.open_movies_page(movies)
 print(media.Movie.VALID_RATINGS)
 print(media.Movie.__doc__)
 
-#print(toy_story.storyline)
-#print(avatar.storyline)
-#avatar.show_trailer()
-#titanic.show_trailer()
+# print(toy_story.storyline)
+# print(avatar.storyline)
+# avatar.show_trailer()
+# titanic.show_trailer()
